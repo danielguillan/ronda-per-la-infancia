@@ -1,0 +1,15 @@
+// =============================================================================
+// Wrapper
+// =============================================================================
+
+.wrapper {
+    max-width: $site-max-width;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    @include respond-to(large-and-up) {
+        width: 90%;
+    }
+}
+
