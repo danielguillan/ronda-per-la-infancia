@@ -1,0 +1,38 @@
+// =============================================================================
+// Hero
+// =============================================================================
+
+.hero {
+    @extend .l-padding-leader-2;
+    @extend .l-padding-trailer-2;
+    @extend .island;
+
+    @include background-size(cover);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: image-url('hero-small.jpg');
+    color: $white;
+
+    @include respond-to(medium-and-up) {
+        background-image: image-url('hero-large.jpg');
+    }
+}
+
+.hero__content {
+    @extend .island;
+    @extend .align--center;
+
+    border: solid 10px $brand-color;
+
+    @include respond-to(large-and-up) {
+        max-width: pixels-to-ems(400px);
+    }
+
+
+    span {
+        display: block;
+        white-space: nowrap;
+        margin-bottom: 0;
+        line-height: 1 !important;
+    }
+}

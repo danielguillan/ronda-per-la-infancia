@@ -1,0 +1,22 @@
+// =============================================================================
+// Each grid beakpoint
+// This mixin generates classes with for each breakpoint available in our $grids
+//
+// =============================================================================
+
+@mixin each-grid-breakpoint($class-name, $base-class: false) {
+
+    @if $base-class == true {
+        .#{$class-name}{
+            @content;
+        }
+    }
+
+    @each $grid in $grids {
+        .#{$grid}-#{$class-name}{
+            @include respond-to(#{nth($breakpoints,index($grids, $grid))}-only){
+                @content;
+            }
+        }
+    }
+}

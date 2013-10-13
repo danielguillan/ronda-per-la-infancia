@@ -1,0 +1,42 @@
+// =============================================================================
+// SVG with fallback
+// Background SVG images with retina PNG fallback for browser with no svg support
+// or without javascript.
+//
+// =============================================================================
+
+@mixin svg-with-fallback($image-name, $path: '') {
+
+    // Build image paths
+    $svg:    $path + $image-name + '.svg';
+    $png:    $path + $image-name + '.png';
+    $png2x:  $path + $image-name + '@2x.png';
+
+    // Retrieve image size
+    $image-width:  image-width($png);
+    $image-height: image-height($png);
+
+    // Set element size and background size
+    display: block;
+    width: $image-width;
+    height: $image-height;
+    background-size: $image-width $image-height;
+
+    // Assign background-image based on browser capabilities
+    .svg & {
+        background-image: image-url($svg, false, false);
+    }
+
+    .no-js &,
+    .no-svg &   {
+
+        background-image: image-url($png, false, false);
+
+        // Can't use respond-to(retina) mixin because of mixin recursion in some cases
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: $responder-retina-pixel-ratio),
+        only screen and (min-resolution: #{(96 * $responder-retina-pixel-ratio)}dpi) {
+            background-image: image-url($png2x, false, false);
+        }
+    }
+}
