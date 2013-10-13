@@ -1158,12 +1158,12 @@ blockquote p:last-of-type:after {
 
 /* line 5, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/typography/_links.scss */
 a {
-  color: #3366cc;
+  color: #01c597;
   text-decoration: none;
 }
 /* line 8, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/typography/_links.scss */
 a:hover, a:active, a:focus {
-  color: #fa5b7d;
+  color: #00634b;
   text-decoration: underline;
 }
 
@@ -1255,13 +1255,13 @@ a:hover, a:active, a:focus {
 }
 /* line 100, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
 .btn.btn--primary {
-  border-color: #083691;
-  color: #ebf0fa;
-  background-color: #3366cc;
+  border-color: #00775b;
+  color: #00140f;
+  background-color: #01c597;
 }
 /* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_button-style.scss */
 .btn.btn--primary:hover {
-  background-color: #668cd9;
+  background-color: #16fec7;
 }
 /* line 101, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
 .btn.btn--info {
@@ -2734,9 +2734,9 @@ a:hover, a:active, a:focus {
 }
 
 /* line 5, ../scss/base/_typography.scss */
-.face--100,
+.face--200,
 .face--light {
-  font-weight: 100;
+  font-weight: 200;
 }
 
 /* line 10, ../scss/base/_typography.scss */
@@ -2846,7 +2846,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 56, ../scss/base/_typography.scss */
 .letter-spaced {
-  letter-spacing: 10px;
+  letter-spacing: 8px;
 }
 
 /* line 60, ../scss/base/_typography.scss */
@@ -2896,15 +2896,10 @@ p {
 
 /* line 21, ../scss/base/_hero.scss */
 .hero__content {
+  max-width: 20em;
   border: solid 10px #2bfecc;
 }
-@media only screen and (min-width: 47em) {
-  /* line 21, ../scss/base/_hero.scss */
-  .hero__content {
-    max-width: 20em;
-  }
-}
-/* line 32, ../scss/base/_hero.scss */
+/* line 28, ../scss/base/_hero.scss */
 .hero__content span {
   display: block;
   white-space: nowrap;
