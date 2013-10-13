@@ -2882,14 +2882,15 @@ p {
 /* line 45, ../scss/base/_containers.scss */
 .container--black {
   background-color: black;
+  color: white;
 }
 
-/* line 50, ../scss/base/_containers.scss */
+/* line 51, ../scss/base/_containers.scss */
 .container--light {
   background-color: #e3e3e3;
 }
 
-/* line 55, ../scss/base/_containers.scss */
+/* line 56, ../scss/base/_containers.scss */
 .container--dark {
   background-color: #777777;
   color: white;
@@ -2899,13 +2900,13 @@ p {
   border-bottom-color: #777777 !important;
 }
 
-/* line 62, ../scss/base/_containers.scss */
+/* line 63, ../scss/base/_containers.scss */
 .container--darker {
   background-color: #333;
   color: white;
 }
 
-/* line 68, ../scss/base/_containers.scss */
+/* line 69, ../scss/base/_containers.scss */
 .container--brand {
   background-color: #2bfecc;
 }
@@ -2914,7 +2915,7 @@ p {
   border-bottom-color: #2bfecc !important;
 }
 
-/* line 74, ../scss/base/_containers.scss */
+/* line 75, ../scss/base/_containers.scss */
 .container--brand-light {
   background-color: #abffee;
 }
@@ -2923,7 +2924,7 @@ p {
   border-bottom-color: #abffee !important;
 }
 
-/* line 80, ../scss/base/_containers.scss */
+/* line 81, ../scss/base/_containers.scss */
 .container--social {
   background-color: #e9eef7;
 }
