@@ -86,8 +86,8 @@ $nano:                      11px;  // default 11px
 
 // Fonts
 $base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; // default: "Helvetica Neue", Arial, sans-serif
-$alternate-font-family: Georgia, "Times New Roman", serif; // default: Georgia, "Times New Roman", serif
-$headings-font-family: $base-font-family; // default: $base-font-family
+$alternate-font-family: 'Titillium Web', 'Helvetica Neue', Arial, sans-serif; // default: Georgia, "Times New Roman", serif
+$headings-font-family: $alternate-font-family; // default: $base-font-family
 
 // Brand
 $brand-face: $base-font-family; // default: $base-font-family
@@ -154,12 +154,12 @@ $table-border:              $line-color; // default: $line-color
 
 $btn-font-weight:           normal; // default: normal
 $btn-border-radius:         none; // default: none
-$btn-padding:               .35em 1.5em; // default: .35em 1.5em
+$btn-padding:               .75em 1.5em; // default: .35em 1.5em
 
 $btn-use-gradient:          false; // default: false
 $btn-use-shadow:            false; // default: false
 
-$create-btn-styles:         true; // default: true
+$create-btn-styles:         false; // default: true
 
 $btn-background:            #f1f1f1; // default: #f1f1f1
 $btn-primary-background:    $link-color; // default: $link-color
