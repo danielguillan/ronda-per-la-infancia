@@ -68,7 +68,7 @@
 
 .container--brand-light {
     @extend %ps;
-    background-color: scale-lightness($brand-color, 90%);
+    background-color: #abffee;
 }
 
 .container--social {
