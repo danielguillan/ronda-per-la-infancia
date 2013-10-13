@@ -2955,3 +2955,15 @@ p {
 .btn--facebook:hover {
   background-color: #5d7dc0;
 }
+
+/* line 10, ../scss/base/_buttons.scss */
+.btn--twitter {
+  border-color: #0059bf;
+  color: #ecf5ff;
+  background-color: #4099ff;
+  color: white;
+}
+/* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_button-style.scss */
+.btn--twitter:hover {
+  background-color: #70b2ff;
+}
