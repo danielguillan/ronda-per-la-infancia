@@ -2848,13 +2848,13 @@ p {
 }
 
 /* line 11, ../scss/base/_containers.scss */
-.container--white, .container--light, .container--dark, .container--darker, .container--brand, .container--brand-light {
+.container--white, .container--black, .container--light, .container--dark, .container--darker, .container--brand, .container--brand-light {
   position: relative;
   z-index: 2;
 }
 
 /* line 17, ../scss/base/_containers.scss */
-.container--dark::before, .container--brand::before, .container--social::before {
+.container--dark::before, .container--brand::before {
   content: "";
   position: absolute;
   top: -1.5em;
@@ -2865,7 +2865,7 @@ p {
 }
 
 /* line 29, ../scss/base/_containers.scss */
-.container--brand::before, .container--social::before {
+.container--brand::before {
   border-left-width: 90em;
 }
 
@@ -2880,11 +2880,16 @@ p {
 }
 
 /* line 45, ../scss/base/_containers.scss */
-.container--light {
-  background-color: #f1f1f1;
+.container--black {
+  background-color: black;
 }
 
 /* line 50, ../scss/base/_containers.scss */
+.container--light {
+  background-color: #e3e3e3;
+}
+
+/* line 55, ../scss/base/_containers.scss */
 .container--dark {
   background-color: #777777;
   color: white;
@@ -2894,13 +2899,13 @@ p {
   border-bottom-color: #777777 !important;
 }
 
-/* line 57, ../scss/base/_containers.scss */
+/* line 62, ../scss/base/_containers.scss */
 .container--darker {
   background-color: #333;
   color: white;
 }
 
-/* line 63, ../scss/base/_containers.scss */
+/* line 68, ../scss/base/_containers.scss */
 .container--brand {
   background-color: #2bfecc;
 }
@@ -2909,18 +2914,14 @@ p {
   border-bottom-color: #2bfecc !important;
 }
 
-/* line 69, ../scss/base/_containers.scss */
+/* line 74, ../scss/base/_containers.scss */
 .container--brand-light {
   background-color: #abffee;
 }
 
-/* line 74, ../scss/base/_containers.scss */
+/* line 79, ../scss/base/_containers.scss */
 .container--social {
   background-color: #e9eef7;
-}
-/* line 8, ../scss/base/_containers.scss */
-.container--social::before {
-  border-bottom-color: #e9eef7 !important;
 }
 
 @media only screen and (max-width: 29.95em) {
