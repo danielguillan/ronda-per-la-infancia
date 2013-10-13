@@ -1170,7 +1170,7 @@ a:hover, a:active, a:focus {
 /* line 8, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/typography/_brand.scss */
 .brand {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif!important;
-  color: #abffee!important;
+  color: #2bfecc!important;
 }
 
 /* line 13, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/typography/_brand.scss */
@@ -1180,7 +1180,7 @@ a:hover, a:active, a:focus {
 
 /* line 17, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/typography/_brand.scss */
 .brand-color {
-  color: #abffee!important;
+  color: #2bfecc!important;
 }
 
 /* line 22, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
@@ -2837,7 +2837,7 @@ p {
 /* line 21, ../scss/base/_hero.scss */
 .hero__content {
   max-width: 20em;
-  border: solid 10px #2BFECC;
+  border: solid 10px #2bfecc;
 }
 /* line 28, ../scss/base/_hero.scss */
 .hero__content span {
@@ -2902,16 +2902,16 @@ p {
 
 /* line 63, ../scss/base/_containers.scss */
 .container--brand {
-  background-color: #abffee;
+  background-color: #2bfecc;
 }
 /* line 8, ../scss/base/_containers.scss */
 .container--brand::before {
-  border-bottom-color: #abffee !important;
+  border-bottom-color: #2bfecc !important;
 }
 
 /* line 69, ../scss/base/_containers.scss */
 .container--brand-light {
-  background-color: #f7fffd;
+  background-color: #abffee;
 }
 
 /* line 74, ../scss/base/_containers.scss */
