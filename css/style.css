@@ -1087,7 +1087,7 @@ body {
 /* line 30, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/typography/_sizes.scss */
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Titillium Web", "Helvetica Neue", Arial, sans-serif;
   line-height: 1;
   margin-top: 0;
 }
@@ -1190,7 +1190,7 @@ a:hover, a:active, a:focus {
   background-color: #f1f1f1;
   display: inline-block;
   margin-bottom: 0;
-  padding: 0.35em 1.5em;
+  padding: 0.75em 1.5em;
   font-weight: normal;
   line-height: 1.25;
   text-align: center;
@@ -1252,66 +1252,6 @@ a:hover, a:active, a:focus {
 /* line 92, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
 .btn.btn--expand {
   width: 100%;
-}
-/* line 100, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
-.btn.btn--primary {
-  border-color: #00775b;
-  color: #00140f;
-  background-color: #01c597;
-}
-/* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_button-style.scss */
-.btn.btn--primary:hover {
-  background-color: #16fec7;
-}
-/* line 101, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
-.btn.btn--info {
-  border-color: #088db4;
-  color: #05151a;
-  background-color: #5bc0de;
-}
-/* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_button-style.scss */
-.btn.btn--info:hover {
-  background-color: #84d0e6;
-}
-/* line 102, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
-.btn.btn--success {
-  border-color: #0ba169;
-  color: #071510;
-  background-color: #56c79d;
-}
-/* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_button-style.scss */
-.btn.btn--success:hover {
-  background-color: #81d5b6;
-}
-/* line 103, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
-.btn.btn--warning {
-  border-color: #c57401;
-  color: #201301;
-  background-color: #fbb450;
-}
-/* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_button-style.scss */
-.btn.btn--warning:hover {
-  background-color: #fcc77c;
-}
-/* line 104, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
-.btn.btn--danger {
-  border-color: #c10a05;
-  color: #1e0403;
-  background-color: #ee5f5b;
-}
-/* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_button-style.scss */
-.btn.btn--danger:hover {
-  background-color: #f28784;
-}
-/* line 105, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
-.btn.btn--inverse {
-  border-color: #474747;
-  color: #f1f1f1;
-  background-color: #777777;
-}
-/* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_button-style.scss */
-.btn.btn--inverse:hover {
-  background-color: #999999;
 }
 
 /* line 115, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/modules/_buttons.scss */
@@ -2741,8 +2681,7 @@ a:hover, a:active, a:focus {
 
 /* line 10, ../scss/base/_typography.scss */
 .face--400,
-.face--normal,
-.teammate__name {
+.face--normal {
   font-weight: 400;
 }
 
@@ -2759,7 +2698,7 @@ a:hover, a:active, a:focus {
 
 /* line 24, ../scss/base/_typography.scss */
 .face--alternate {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Titillium Web", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* line 28, ../scss/base/_typography.scss */
@@ -2841,15 +2780,16 @@ a:hover, a:active, a:focus {
 }
 /* line 52, ../scss/base/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
-/* line 56, ../scss/base/_typography.scss */
+/* line 57, ../scss/base/_typography.scss */
 .letter-spaced {
   letter-spacing: 8px;
 }
 
-/* line 60, ../scss/base/_typography.scss */
+/* line 61, ../scss/base/_typography.scss */
 p {
   max-width: 32em;
 }
@@ -2863,16 +2803,16 @@ p {
 }
 /* line 26, ../scss/mixins/_svg-with-fallback.scss */
 .svg .logo {
-  background-image: url('../img/logo-ronda-dels-cims.svg');
+  background-image: url('/img/logo-ronda-dels-cims.svg');
 }
 /* line 30, ../scss/mixins/_svg-with-fallback.scss */
 .no-js .logo, .no-svg .logo {
-  background-image: url('../img/logo-ronda-dels-cims.png');
+  background-image: url('/img/logo-ronda-dels-cims.png');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   /* line 30, ../scss/mixins/_svg-with-fallback.scss */
   .no-js .logo, .no-svg .logo {
-    background-image: url('../img/logo-ronda-dels-cims@2x.png');
+    background-image: url('/img/logo-ronda-dels-cims@2x.png');
   }
 }
 
@@ -2884,13 +2824,13 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url('../img/hero-small.jpg?1381619331');
+  background-image: url('/img/hero-small.jpg?1381669614');
   color: white;
 }
 @media only screen and (min-width: 30em) {
   /* line 5, ../scss/base/_hero.scss */
   .hero {
-    background-image: url('../img/hero-large.jpg?1381619311');
+    background-image: url('/img/hero-large.jpg?1381669614');
   }
 }
 
