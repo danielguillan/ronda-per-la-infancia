@@ -27,15 +27,16 @@
         @extend .thumbnail-circle;
 
         @include respond-to(small-and-below) {
-            width: 75px;
+            position: absolute;
         }
     }
 
     .teammate--hero & {
+        position: relative;
+        margin-top: -6em;
+
         @include respond-to(large-and-up) {
             float: right;
-            position: relative;
-            margin-top: -6em;
         }
     }
 }
@@ -48,6 +49,14 @@
 .teammate__name {
     @extend .alpha;
 
+    .teammate--secondary & {
+
+        @include respond-to(small-and-below) {
+            margin-top: $base-spacing-unit * 6;
+        }
+
+    }
+
     .teammate--hero & {
         @extend .mega;
     }
@@ -59,3 +68,21 @@
     }
 }
 
+.teammate--hero {
+    .teammate__name,
+    .teammate__role,
+    .teammate__description {
+        @include respond-to(large-and-up) {
+            padding-left: 10%;
+        }
+    }
+
+}
+
+.teammate--secondary {
+    @include respond-to(small-and-below) {
+        .flag__image {
+            padding-right: 0;
+        }
+    }
+}
