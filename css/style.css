@@ -2857,40 +2857,46 @@ p {
 .container--dark::before, .container--brand::before, .container--brand-light::before {
   content: "";
   position: absolute;
-  top: -1.5em;
+  top: -1.49em;
   display: block;
   border-width: 0 0 1.5em 0;
   border-style: solid;
   border-color: transparent;
+  left: -5em;
+  /*Improving the inclination on the even ones*/
+  right: 0;
+  /*ToDo: -5 makes iOS overflow. Not perfect. Fix it!*/
+  -moz-transform: scale(1.1);
+  /*Fixes dent rendering on FF*/
 }
 
-/* line 29, ../scss/base/_containers.scss */
+/* line 32, ../scss/base/_containers.scss */
 .container--brand::before, .container--brand-light::before {
   border-left-width: 90em;
 }
 
-/* line 35, ../scss/base/_containers.scss */
+/* line 38, ../scss/base/_containers.scss */
 .container--dark::before {
   border-right-width: 90em;
 }
 
-/* line 40, ../scss/base/_containers.scss */
+/* line 43, ../scss/base/_containers.scss */
 .container--white {
   background-color: white;
 }
 
-/* line 45, ../scss/base/_containers.scss */
+/* line 48, ../scss/base/_containers.scss */
 .container--black {
   background-color: black;
   color: white;
 }
 
-/* line 51, ../scss/base/_containers.scss */
+/* line 54, ../scss/base/_containers.scss */
 .container--light {
   background-color: #e3e3e3;
 }
 
-/* line 56, ../scss/base/_containers.scss */
+/* line 59, ../scss/base/_containers.scss */
 .container--dark {
   background-color: #777777;
   color: white;
@@ -2900,13 +2906,13 @@ p {
   border-bottom-color: #777777 !important;
 }
 
-/* line 63, ../scss/base/_containers.scss */
+/* line 66, ../scss/base/_containers.scss */
 .container--darker {
   background-color: #333;
   color: white;
 }
 
-/* line 69, ../scss/base/_containers.scss */
+/* line 72, ../scss/base/_containers.scss */
 .container--brand {
   background-color: #2bfecc;
 }
@@ -2915,7 +2921,7 @@ p {
   border-bottom-color: #2bfecc !important;
 }
 
-/* line 75, ../scss/base/_containers.scss */
+/* line 78, ../scss/base/_containers.scss */
 .container--brand-light {
   background-color: #abffee;
 }
@@ -2924,9 +2930,15 @@ p {
   border-bottom-color: #abffee !important;
 }
 
-/* line 81, ../scss/base/_containers.scss */
+/* line 84, ../scss/base/_containers.scss */
 .container--social {
   background-color: #e9eef7;
+}
+
+/* line 92, ../scss/base/_containers.scss */
+html,
+body {
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 29.95em) {
