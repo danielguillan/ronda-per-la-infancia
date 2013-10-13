@@ -22,12 +22,8 @@
     @extend .island;
     @extend .align--center;
 
+    max-width: pixels-to-ems(400px);
     border: solid 10px $brand-color;
-
-    @include respond-to(large-and-up) {
-        max-width: pixels-to-ems(400px);
-    }
-
 
     span {
         display: block;
