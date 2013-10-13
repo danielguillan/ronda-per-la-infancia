@@ -1158,12 +1158,12 @@ blockquote p:last-of-type:after {
 
 /* line 5, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/typography/_links.scss */
 a {
-  color: #01c597;
+  color: #01b188;
   text-decoration: none;
 }
 /* line 8, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/typography/_links.scss */
 a:hover, a:active, a:focus {
-  color: #00634b;
+  color: #005944;
   text-decoration: underline;
 }
 
@@ -2720,27 +2720,27 @@ a:hover, a:active, a:focus {
 
   /* line 38, ../scss/base/_typography.scss */
   .giga {
-    font-size: 88px;
+    font-size: 62px;
   }
 
   /* line 39, ../scss/base/_typography.scss */
   .mega, .teammate--hero .teammate__name {
-    font-size: 76px;
+    font-size: 54px;
   }
 
   /* line 40, ../scss/base/_typography.scss */
   .kilo {
-    font-size: 60px;
+    font-size: 48px;
   }
 
   /* line 41, ../scss/base/_typography.scss */
   .alpha, h1, .teammate__name {
-    font-size: 52px;
+    font-size: 46px;
   }
 
   /* line 42, ../scss/base/_typography.scss */
   .beta, h2 {
-    font-size: 46px;
+    font-size: 38px;
   }
 
   /* line 43, ../scss/base/_typography.scss */
@@ -2750,7 +2750,7 @@ a:hover, a:active, a:focus {
 
   /* line 44, ../scss/base/_typography.scss */
   .delta, h4, .teammate--hero .teammate__description {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   /* line 45, ../scss/base/_typography.scss */
@@ -2786,12 +2786,31 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 57, ../scss/base/_typography.scss */
 .letter-spaced {
-  letter-spacing: 8px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 47em) {
+  /* line 57, ../scss/base/_typography.scss */
+  .letter-spaced {
+    letter-spacing: 8px;
+  }
 }
 
-/* line 61, ../scss/base/_typography.scss */
+/* line 66, ../scss/base/_typography.scss */
 p {
   max-width: 32em;
+}
+
+@media only screen and (max-width: 46.95em) {
+  /* line 76, ../scss/base/_typography.scss */
+  .colaboradors-title {
+    font-size: 36px !important;
+  }
+}
+@media only screen and (max-width: 29.95em) {
+  /* line 76, ../scss/base/_typography.scss */
+  .colaboradors-title {
+    font-size: 24px !important;
+  }
 }
 
 /* line 5, ../scss/base/_logo.scss */
@@ -2837,7 +2856,7 @@ p {
 /* line 21, ../scss/base/_hero.scss */
 .hero__content {
   max-width: 20em;
-  border: solid 10px #2bfecc;
+  border: solid 15px #2bfecc;
 }
 /* line 28, ../scss/base/_hero.scss */
 .hero__content span {
@@ -2944,15 +2963,41 @@ body {
 @media only screen and (max-width: 29.95em) {
   /* line 26, ../scss/base/_teammate.scss */
   .teammate--secondary .teammate__photo {
-    width: 75px;
+    position: absolute;
   }
+}
+/* line 34, ../scss/base/_teammate.scss */
+.teammate--hero .teammate__photo {
+  position: relative;
+  margin-top: -6em;
 }
 @media only screen and (min-width: 47em) {
   /* line 34, ../scss/base/_teammate.scss */
   .teammate--hero .teammate__photo {
     float: right;
-    position: relative;
-    margin-top: -6em;
+  }
+}
+
+@media only screen and (max-width: 29.95em) {
+  /* line 52, ../scss/base/_teammate.scss */
+  .teammate--secondary .teammate__name {
+    margin-top: 180px;
+  }
+}
+
+@media only screen and (min-width: 47em) {
+  /* line 72, ../scss/base/_teammate.scss */
+  .teammate--hero .teammate__name,
+  .teammate--hero .teammate__role,
+  .teammate--hero .teammate__description {
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 29.95em) {
+  /* line 84, ../scss/base/_teammate.scss */
+  .teammate--secondary .flag__image {
+    padding-right: 0;
   }
 }
 
