@@ -2803,16 +2803,16 @@ p {
 }
 /* line 26, ../scss/mixins/_svg-with-fallback.scss */
 .svg .logo {
-  background-image: url('/img/logo-ronda-dels-cims.svg');
+  background-image: url('../img/logo-ronda-dels-cims.svg');
 }
 /* line 30, ../scss/mixins/_svg-with-fallback.scss */
 .no-js .logo, .no-svg .logo {
-  background-image: url('/img/logo-ronda-dels-cims.png');
+  background-image: url('../img/logo-ronda-dels-cims.png');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   /* line 30, ../scss/mixins/_svg-with-fallback.scss */
   .no-js .logo, .no-svg .logo {
-    background-image: url('/img/logo-ronda-dels-cims@2x.png');
+    background-image: url('../img/logo-ronda-dels-cims@2x.png');
   }
 }
 
@@ -2824,13 +2824,13 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url('/img/hero-small.jpg?1381669614');
+  background-image: url('../img/hero-small.jpg?1381669614');
   color: white;
 }
 @media only screen and (min-width: 30em) {
   /* line 5, ../scss/base/_hero.scss */
   .hero {
-    background-image: url('/img/hero-large.jpg?1381669614');
+    background-image: url('../img/hero-large.jpg?1381669614');
   }
 }
 
