@@ -35,13 +35,13 @@
 
 @include respond-to(small-and-below) {
     @include set-font-size($font-size: 18px, $base-line: (18px * 1.5) );
-    .giga { font-size: 88px; }
-    .mega { font-size: 76px; }
-    .kilo { font-size: 60px; }
-    .alpha { font-size: 52px; }
-    .beta { font-size: 46px; }
+    .giga { font-size: 62px; }
+    .mega { font-size: 54px; }
+    .kilo { font-size: 48px; }
+    .alpha { font-size: 46px; }
+    .beta { font-size: 38px; }
     .gamma { font-size: 32px; }
-    .delta { font-size: 26px; }
+    .delta { font-size: 22px; }
     .epsilon { font-size: 22px; }
     .zeta { font-size: 18px; }
     .milli { font-size: 16px; }
@@ -55,7 +55,12 @@
 }
 
 .letter-spaced {
-    letter-spacing: 8px;
+
+    letter-spacing: 2px;
+
+    @include respond-to(large-and-up) {
+        letter-spacing: 8px;
+    }
 }
 
 p {
@@ -63,5 +68,17 @@ p {
 
     .text--center & {
         @extend .align--center;
+    }
+}
+
+
+// @todo: fix this dirty hack to prevent text overflow
+.colaboradors-title {
+    @include respond-to(medium-and-below) {
+        font-size: 36px !important;
+    }
+
+    @include respond-to(small-and-below) {
+        font-size: 24px !important;
     }
 }
