@@ -2,7 +2,8 @@
 // Logo
 // =============================================================================
 
-.logo { @include svg-with-fallback('logo-ronda-dels-cims'); }
-
-.logo-link { width: auto; }
+.logo {
+    @extend .align--center;
+    @include svg-with-fallback('logo-ronda-dels-cims');
+}
 
