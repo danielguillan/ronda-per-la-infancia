@@ -6,3 +6,8 @@
     @include btn-style($background-color: $facebook-color);
     color: white;
 }
+
+.btn--twitter {
+    @include btn-style($background-color: $twitter-color);
+    color: white;
+}
