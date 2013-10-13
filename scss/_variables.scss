@@ -2,8 +2,7 @@
 // Variables
 //
 // Table of contents:
-// 1. Grids
-// 2. Breakpoints
+// 1. Grids and breakpoints
 //
 // =============================================================================
 
@@ -11,9 +10,10 @@
 // 1. Grids and breakpoints
 // =============================================================================
 
-$grids:             s, l;
-$breakpoints:       small, large;
+$grids:             s, m, l;
+$breakpoints:       'small', 'medium', 'large';
 $site-max-width:    pixels-to-ems(1200px);
 $small:             320px;
-$large:             745px;
-$breakpoint-sizes:  $small $large;
+$medium:            600px;
+$large:             940px;
+$breakpoint-sizes:  $small $medium $large;
