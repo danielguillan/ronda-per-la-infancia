@@ -47,7 +47,6 @@
 
 .teammate__name {
     @extend .alpha;
-    @extend .face--normal;
 
     .teammate--hero & {
         @extend .mega;
