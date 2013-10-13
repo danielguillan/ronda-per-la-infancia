@@ -1,0 +1,41 @@
+// =============================================================================
+// Abstractions
+//
+// Table of contents:
+// 1. Align
+// 2. Leader & Trailer
+//
+// =============================================================================
+
+// =============================================================================
+// 1. Align
+// =============================================================================
+
+.align--center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// =============================================================================
+// 2. Leader & Trailer
+// Leading and trailing margins and paddings
+//   @usage:
+//      Everywhere:
+//          <div class="trailer-2">…</div>
+//      On mobile only:
+//          <div class="m-trailer-3">…/div>
+//
+// =============================================================================
+
+@each $property in padding margin {
+    @for $i from 1 to 4 {
+
+        @include each-grid-breakpoint($class-name:'#{$property}-leader-#{$i}', $base-class: true) {
+            @include rem('#{$property}-top', $base-spacing-unit * $i * 2);
+        }
+
+        @include each-grid-breakpoint($class-name:'#{$property}-trailer-#{$i}', $base-class: true) {
+            @include rem('#{$property}-bottom', $base-spacing-unit * $i * 2);
+        }
+    }
+}

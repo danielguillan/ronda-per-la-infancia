@@ -36,7 +36,8 @@
 // 3. Mixins
 // =============================================================================
 
-@import 'mixins/svg-with-fallback';
+@import 'mixins/svg-with-fallback',
+        'mixins/each-grid-breakpoint';
 
 
 // =============================================================================
@@ -44,6 +45,7 @@
 // =============================================================================
 
 @import 'layout/breakpoints',
+        'layout/grids',
         'layout/wrapper';
 
 
@@ -51,5 +53,11 @@
 // 6. Base styles
 // =============================================================================
 
-@import 'base/logo';
+@import 'base/abstractions',
+        'base/typography',
+        'base/logo',
+        'base/hero',
+        'base/containers',
+        'base/teammate',
+        'base/buttons';
 

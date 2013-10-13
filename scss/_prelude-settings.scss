@@ -27,7 +27,7 @@ $default-border-radius:     4px; // default: 4px
 
 // Grays
 $white:                     #fff; // default: #fff
-$gray-lighter:              #ccc; // default: #ccc
+$gray-lighter:              #f1f1f1; // default: #ccc
 $gray-light:                #999; // default: #999
 $gray:                      #777; // default: #777
 $gray-dark:                 #555; // default: #555
@@ -63,8 +63,8 @@ $line-color: #e6e6e6; // default: #e6e6e6
 // =============================================================================
 
 // Vertical Rythm
-$base-font-size:            $base-font-size; // default: $base-font-size (from Compass)
-$base-line-height:          $base-line-height; // default: $base-line-height (From Compass)
+$base-font-size:            20px; // default: $base-font-size (from Compass)
+$base-line-height:          $base-font-size * 1.5; // default: $base-line-height (From Compass)
 
 $base-spacing-unit:         $base-line-height; // default: $base-line-height
 $half-spacing-unit:         $base-spacing-unit / 2; // default: $base-spacing-unit / 2
@@ -85,13 +85,13 @@ $micro:                     14px;  // default 14px
 $nano:                      11px;  // default 11px
 
 // Fonts
-$base-font-family: "Helvetica Neue", Arial, sans-serif; // default: "Helvetica Neue", Arial, sans-serif
+$base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; // default: "Helvetica Neue", Arial, sans-serif
 $alternate-font-family: Georgia, "Times New Roman", serif; // default: Georgia, "Times New Roman", serif
 $headings-font-family: $base-font-family; // default: $base-font-family
 
 // Brand
 $brand-face: $base-font-family; // default: $base-font-family
-$brand-color: $black; // default: $black
+$brand-color: #2BFECC; // default: $black
 
 // Colors
 $subheader-color: $gray-light; // default: $gray-light

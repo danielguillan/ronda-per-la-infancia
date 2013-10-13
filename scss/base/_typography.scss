@@ -1,0 +1,66 @@
+// =============================================================================
+// Typography
+// =============================================================================
+
+.face--100,
+.face--light {
+    font-weight: 100;
+}
+
+.face--400,
+.face--normal {
+    font-weight: 400;
+}
+
+.face--700,
+.face--bold {
+    font-weight: 700;
+}
+
+.face--base {
+    font-family: $base-font-family;
+}
+
+.face--alternate {
+    font-family: $alternate-font-family;
+}
+
+.face--italic {
+    font-style: italic;
+}
+
+.weak-text-color {
+    color: $weak-text-color;
+}
+
+@include respond-to(small-and-below) {
+    @include set-font-size($font-size: 18px, $base-line: (18px * 1.5) );
+    .giga { font-size: 88px; }
+    .mega { font-size: 76px; }
+    .kilo { font-size: 60px; }
+    .alpha { font-size: 52px; }
+    .beta { font-size: 46px; }
+    .gamma { font-size: 32px; }
+    .delta { font-size: 26px; }
+    .epsilon { font-size: 22px; }
+    .zeta { font-size: 18px; }
+    .milli { font-size: 16px; }
+    .micro { font-size: 14px; }
+    .nano { font-size: 11px; }
+}
+
+#{headings()} {
+    letter-spacing: 1px;
+}
+
+.letter-spaced {
+    letter-spacing: 10px;
+}
+
+p {
+    max-width: 32em;
+
+    .text--center & {
+        @extend .align--center;
+    }
+}

@@ -1,0 +1,78 @@
+// =============================================================================
+// Containers
+// =============================================================================
+
+@mixin slanted-container($direction, $color) {
+    @extend %slanted-container;
+    @extend %slanted-container--#{$direction};
+    &::before { border-bottom-color: $color !important; }
+}
+
+%ps {
+    position: relative;
+    z-index: 2;
+}
+
+%slanted-container {
+    &::before {
+        content: "";
+        position: absolute;
+        top: -1.5em;
+        display: block;
+        border-width: 0 0 1.5em 0;
+        border-style: solid;
+        border-color: transparent;
+    }
+}
+
+%slanted-container--up {
+    &::before {
+        border-left-width: 90em;
+    }
+}
+
+%slanted-container--down {
+    &::before {
+        border-right-width: 90em;
+    }
+}
+
+.container--white {
+    @extend %ps;
+    background-color: $white;
+}
+
+.container--light {
+    @extend %ps;
+    background-color: $gray-lighter;
+}
+
+.container--dark {
+    @extend %ps;
+    @include slanted-container(down, #777777);
+    background-color: #777777;
+    color: $white;
+}
+
+.container--darker {
+    @extend %ps;
+    background-color: #333;
+    color: $white;
+}
+
+.container--brand {
+    @extend %ps;
+    @include slanted-container(up, $brand-color);
+    background-color: $brand-color;
+}
+
+.container--brand-light {
+    @extend %ps;
+    background-color: scale-lightness($brand-color, 90%);
+}
+
+.container--social {
+    $social-background-color: scale-lightness($facebook-color, 90%);
+    @include slanted-container(up, $social-background-color);
+    background-color: $social-background-color;
+}

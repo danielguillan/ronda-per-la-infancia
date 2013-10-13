@@ -12,6 +12,7 @@
 
     <link rel="canonical" href="http://rondaperlainfancia.com/">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic' rel='stylesheet' type='text/css'>
 
     <script src="js/modernizr.js" type="text/javascript"></script>
 
@@ -21,20 +22,21 @@
 
     <header>
         <div class="hero">
-            <div class="wrapper">
-
-                <a class="logo-link" href="/">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="logo" alt="Ronda per la infància">
-                </a>
-
-                <h1>
-                    <span>182 KM</span>
-                    <span>DE DISTANCIA</span>
-                    <span>13.000 M</span>
-                    <span>DE DESNIVELL</span>
+            <div class="hero__content padding-leader-1">
+                <div class="push--bottom">
+                    <a href="/" title="Ronda per la infància">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="logo" alt="Ronda per la infància">
+                    </a>
+                </div>
+                <h1 class="text--center face--normal">
+                    <span class="caps kilo">182 Km</span>
+                    <span class="caps delta letter-spaced push-half--bottom">de distància</span>
+                    <span class="caps kilo">13.000 m</span>
+                    <span class="caps delta letter-spaced">de desnivell</span>
                 </h1>
-                <h2>Un repte per la infància a la Ronda dels Cims 2014</h2>
+                <h2 class="delta face--normal text--center push--top">Un repte per la infància<br> a la Ronda dels Cims 2014</h2>
             </div>
+
         </div>
     </header>
 
@@ -43,71 +45,105 @@
     El Repte
 
     -->
-    <section id="el-repte">
-        <div class="wrapper">
-            <h3>El repte</h3>
-            <p class="caps">L’equip Ronda per la Infància ha d’assolir un top-10 en la Ronda dels Cims 2014.</p>
+    <section id="el-repte" class="container--brand">
+        <div class="wrapper text--center s-padding-leader-1 s-padding-trailer-1 l-padding-leader-3 l-padding-trailer-3">
+            <h3 class="giga caps face--normal margin-trailer-2">El repte</h3>
+            <p class="caps delta">L’equip Ronda per la Infància ha d’assolir un top-10 en la Ronda dels Cims 2014. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, illum, impedit, omnis ut et obcaecati doloremque esse.</p>
         </div>
     </section>
 
     <section id="equip">
 
         <article id="joan-vilana">
-            <div class="wrapper">
-                <h3>Joan Vilana</h3>
-                <h4>Corredor</h4>
-                <img src="img/photos/joan-vilana.png" alt="Joan Vilana">
-                <p>Joan Vilana Diaz: Bomber del grup de rescat de muntanya i guia acompanyant de muntanya UIAGM. L’atleta del projecte.</p>
-            </div>
-        </article>
-
-        <article id="xavi-comas">
-            <div class="wrapper">
-                <h3>Xavi Comas</h3>
-                <h4>Entrenador i preparador</h4>
-                <div class="flag">
-                    <div class="flag__image">
-                        <img src="img/photos/xavi-comas.jpg" alt="Xavi Comas" class="thumbnail-circle" width="250">
-                    </div>
-                    <div class="flag__body">
-                        <p>Llicenciat en INEFC, professor d’educació física a Formació Professional i a l’EFPEM. Ex-corredor de l’equip nacional d’esquí de muntanya i entrenador personal. També és guia acompanyant de muntanya. Entrenador del Joan Vilana en aquest projecte.</p>
-                    </div>
+            <div class="container--dark">
+                <div class="teammate teammate--hero">
+                    <div class="grid">
+                        <div class="grid__item one-whole m-one-third l-one-half push--m-two-thirds push--l-one-half">
+                            <img class="teammate__photo" src="img/photos/joan-vilana.png" alt="Joan Vilana">
+                        </div><!--
+                        --><div class="grid__item one-whole m-two-thirds l-one-half pull--m-one-third pull--l-one-half">
+                            <div class="wrapper l-margin-leader-1 island s-margin-trailer-1">
+                                <h3 class="teammate__name">Joan Vilana</h3>
+                                <h4 class="teammate__position">Corredor</h4>
+                                <p class="teammate__description">Bomber del grup de rescat de muntanya i guia acompanyant de muntanya UIAGM. L’atleta del projecte. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, architecto aliquid suscipit quasi.</p>
+                            </div>
+                        </div>
                 </div>
             </div>
         </article>
 
-        <article id="mateu-lopez">
-            <div class="wrapper">
-                <h3>Mateu López</h3>
-                <h4>Suport logístic</h4>
-                <div class="flag">
-                    <div class="flag__image">
-                        <img src="img/photos/mateu-lopez.jpg" alt="Mateu López" class="thumbnail-circle" width="250">
-                    </div>
-                    <div class="flag__body">
-                        <p>Atleta andorrà que ha corregut en múltiples competicions internacionals amb resultats destacables en jocs internacionals i en curses atlètiques clàssiques en 10km, mitjes maratons i maratons. Actualment, treballa per la Federació Andorrana de Fútbol en el manteniment d’instal·lacions esportives. Encarregat de la logística de cursa.</p>
-                    </div>
+        <div class="container--white wrapper">
+            <div class="grid">
+
+                <div class="grid__item one-whole l-one-half padding-leader-1 padding-trailer-1">
+                    <article id="xavi-comas">
+                        <div class="teammate teammate--secondary">
+                            <div class="flag flag--top">
+                                <div class="flag__image">
+                                    <img class="teammate__photo" src="img/photos/xavi-comas.jpg" alt="Xavi Comas" width="150">
+                                </div>
+                                <div class="flag__body">
+                                    <h3 class="teammate__name">Xavi Comas</h3>
+                                    <h4 class="teammate__role">Entrenador i preparador</h4>
+                                    <p class="teammate__description">Llicenciat en INEFC, professor d’educació física a Formació Professional i a l’EFPEM. Ex-corredor de l’equip nacional d’esquí de muntanya i entrenador personal. També és guia acompanyant de muntanya. Entrenador del Joan Vilana en aquest projecte.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div><!--
+
+                --><div class="grid__item one-whole l-one-half padding-leader-1 padding-trailer-1">
+                    <article id="mateu-lopez">
+                        <div class="teammate teammate--secondary">
+                            <div class="flag flag--top">
+                                <div class="flag__image">
+                                    <img class="teammate__photo" src="img/photos/mateu-lopez.jpg" alt="Mateu López" width="150">
+                                </div>
+                                <div class="flag__body">
+                                    <h3 class="teammate__name">Mateu López</h3>
+                                    <h4 class="teammate__role">Suport logístic</h4>
+                                    <p class="teammate__description">Atleta andorrà que ha corregut en múltiples competicions internacionals amb resultats destacables en jocs internacionals i en curses atlètiques clàssiques en 10km, mitjes maratons i maratons. Actualment, treballa per la Federació Andorrana de Fútbol en el manteniment d’instal·lacions esportives. Encarregat de la logística de cursa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </article>
+        </div>
 
     </section>
 
     <section id="collaboradors">
-        <div class="wrapper">
-            <h3>Col·laboradors</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nisi ullam aliquid expedita tempora asperiores commodi cum iste quo vitae autem laboriosam odio architecto incidunt aliquam dolore veritatis earum quibusdam!</p>
+        <div class="container--light">
+            <div class="wrapper padding-leader-3 padding-trailer-3">
 
-            <h3>Fes-te col·laborador!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, perspiciatis, nemo asperiores iusto qui vero adipisci deleniti accusantium iure nesciunt nihil doloribus itaque odit deserunt cupiditate officiis officia voluptate blanditiis.</p>
-            <p>Contacta'ns per email a <a href="mailto:sponsors@rondaperlainfancia.com">sponsors@rondadperlainfancia.com</a>, vía la nostra <a href="https://www.facebook.com/ronda-per-la-infancia">pàgina de Facebook</a> o per telèfon al <a href="tel:+367888888">(+376) 888 888</a></p>
+                <div class="text--center">
+                    <h3 class="mega caps face--normal margin-trailer-2">Col·laboradors</h3>
+                    <p class="caps delta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nisi ullam aliquid expedita tempora asperiores commodi cum iste quo vitae autem laboriosam odio architecto incidunt aliquam dolore veritatis earum quibusdam!</p>
+                </div>
+
+                <div class="grid margin-leader-3">
+                    <div class="grid__item one-whole l-one-half">
+                        <p class="text--center weak-text-color">El teu logo aquí</p>
+                    </div><!--
+                    --><div class="grid__item one-whole l-one-half">
+                        <h4>Fes-te col·laborador!</h3>
+                        <p>Potència la imatge solidària de la teva empresa o organització gràcies a aquest repte pioner a Andorra.</p>
+                        <p>El seguiment mediàtic, la presència en aquesta web i en la de l'<a href="http://www.andorraultratrail.com/" rel="nofollow">Ultra Trail d'Andorra</a> i a les xarxes socials tindrà un gran impacte publicitari per la teva marca.</p>
+                        <p>Contacta'ns per email a <a href="mailto:sponsors@rondaperlainfancia.com">sponsors@rondadperlainfancia.com</a>, vía la nostra <a href="https://www.facebook.com/ronda-per-la-infancia" rel="nofollow">pàgina de Facebook</a> o per telèfon al <a href="tel:+367888888">(+376) 888 888</a></p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section id="social">
-        <div class="wrapper">
-            <div class="text--center">
-                <a href="https://www.facebook.com/ronda-per-la-infancia" class="btn btn--large btn--facebook">Segueix-nos a Facebook</a>
+        <div class="container--social">
+            <div class="wrapper padding-leader-2 padding-trailer-2">
+                <div class="text--center">
+                    <a href="https://www.facebook.com/ronda-per-la-infancia" class="btn btn--large btn--facebook" rel="nofollow">Segueix-nos a Facebook</a>
+                </div>
             </div>
         </div>
     </section>
@@ -115,7 +151,7 @@
     <footer>
         <div class="wrapper">
             <div class="text--center island">
-                <small>Design and Code by <a href="http://danielguillan.com">Daniel Guillan</a> and <a href="http://sofiaortun.com">Sofia Ortun</a></small>
+                <small>Design and Code by <a href="http://danielguillan.com">Daniel Guillan</a> and <a href="http://sofiaortun.com">Sofia Ortun</a>.</small>
             </div>
         </div>
     </footer>
