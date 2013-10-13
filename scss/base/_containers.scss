@@ -17,11 +17,14 @@
     &::before {
         content: "";
         position: absolute;
-        top: -1.5em;
+        top: -1.49em;
         display: block;
         border-width: 0 0 1.5em 0;
         border-style: solid;
         border-color: transparent;
+        left: -5em; /*Improving the inclination on the even ones*/
+        right: 0; /*ToDo: -5 makes iOS overflow. Not perfect. Fix it!*/
+        -moz-transform: scale(1.1); /*Fixes dent rendering on FF*/
     }
 }
 
@@ -83,3 +86,10 @@
     background-color: $social-background-color;
 }
 
+// Dirty hack to prevent slanted containers bug
+// @Todo: Fix the bug and remove this
+
+html,
+body {
+  overflow-x: hidden;
+}
