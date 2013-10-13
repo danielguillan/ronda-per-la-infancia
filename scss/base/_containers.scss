@@ -42,6 +42,11 @@
     background-color: $white;
 }
 
+.container--black {
+    @extend %ps;
+    background-color: $black;
+}
+
 .container--light {
     @extend %ps;
     background-color: $gray-lighter;
@@ -68,11 +73,11 @@
 
 .container--brand-light {
     @extend %ps;
-    background-color: scale-lightness($brand-color, 90%);
+    background-color: #abffee;
 }
 
 .container--social {
     $social-background-color: scale-lightness($facebook-color, 90%);
-    @include slanted-container(up, $social-background-color);
     background-color: $social-background-color;
 }
+
