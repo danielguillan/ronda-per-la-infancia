@@ -73,6 +73,7 @@
 
 .container--brand-light {
     @extend %ps;
+    @include slanted-container(up, #abffee);
     background-color: #abffee;
 }
 

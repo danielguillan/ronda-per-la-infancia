@@ -2854,7 +2854,7 @@ p {
 }
 
 /* line 17, ../scss/base/_containers.scss */
-.container--dark::before, .container--brand::before {
+.container--dark::before, .container--brand::before, .container--brand-light::before {
   content: "";
   position: absolute;
   top: -1.5em;
@@ -2865,7 +2865,7 @@ p {
 }
 
 /* line 29, ../scss/base/_containers.scss */
-.container--brand::before {
+.container--brand::before, .container--brand-light::before {
   border-left-width: 90em;
 }
 
@@ -2918,8 +2918,12 @@ p {
 .container--brand-light {
   background-color: #abffee;
 }
+/* line 8, ../scss/base/_containers.scss */
+.container--brand-light::before {
+  border-bottom-color: #abffee !important;
+}
 
-/* line 79, ../scss/base/_containers.scss */
+/* line 80, ../scss/base/_containers.scss */
 .container--social {
   background-color: #e9eef7;
 }
