@@ -101,7 +101,7 @@ $subheader-color: $gray-light; // default: $gray-light
 // 4. Grid system
 // =============================================================================
 
-$grid-gutter:               $base-spacing-unit; // default: $base-spacing-unit
+$grid-gutter:               $base-spacing-unit * 2; // default: $base-spacing-unit
 $grid-use-placeholder:      false; // default: false
 $grid-breakpoints:          's' '(min-width: 320px)', 'm' '(min-width: 600px)', 'l' '(min-width: 940px)'; // default: 's' '(min-width: 320px)', 'm' '(min-width: 700px)', 'l' '(min-width: 980px)'
 $generate-default-grid:     false; // default: false
