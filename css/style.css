@@ -2102,16 +2102,16 @@ p {
 }
 /* line 26, ../scss/mixins/_svg-with-fallback.scss */
 .svg .logo {
-  background-image: url('../img/logo-ronda-dels-cims.svg');
+  background-image: url('../img/logo-ronda-per-la-infancia.svg');
 }
 /* line 30, ../scss/mixins/_svg-with-fallback.scss */
 .no-js .logo, .no-svg .logo {
-  background-image: url('../img/logo-ronda-dels-cims.png');
+  background-image: url('../img/logo-ronda-per-la-infancia.png');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   /* line 30, ../scss/mixins/_svg-with-fallback.scss */
   .no-js .logo, .no-svg .logo {
-    background-image: url('../img/logo-ronda-dels-cims@2x.png');
+    background-image: url('../img/logo-ronda-per-la-infancia@2x.png');
   }
 }
 
