@@ -2080,14 +2080,19 @@ p {
   max-width: 32em;
 }
 
+/* line 74, ../scss/base/_typography.scss */
+ul {
+  padding: 0;
+}
+
 @media only screen and (max-width: 46.95em) {
-  /* line 76, ../scss/base/_typography.scss */
+  /* line 77, ../scss/base/_typography.scss */
   .colaboradors-title {
     font-size: 36px !important;
   }
 }
 @media only screen and (max-width: 29.95em) {
-  /* line 76, ../scss/base/_typography.scss */
+  /* line 77, ../scss/base/_typography.scss */
   .colaboradors-title {
     font-size: 24px !important;
   }
