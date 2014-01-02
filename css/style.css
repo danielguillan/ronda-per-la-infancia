@@ -1267,7 +1267,7 @@ a:hover, a:active, a:focus {
 }
 
 /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-.one-half, .two-quarters {
+.one-half {
   width: 50%;
 }
 
@@ -1281,16 +1281,6 @@ a:hover, a:active, a:focus {
   width: 66.66667%;
 }
 
-/* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-.one-quarter {
-  width: 25%;
-}
-
-/* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-.three-quarters {
-  width: 75%;
-}
-
 @media only screen and (min-width: 320px) {
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
   .s-one-whole {
@@ -1298,7 +1288,7 @@ a:hover, a:active, a:focus {
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .s-one-half, .s-two-quarters {
+  .s-one-half {
     width: 50%;
   }
 
@@ -1311,16 +1301,6 @@ a:hover, a:active, a:focus {
   .s-two-thirds {
     width: 66.66667%;
   }
-
-  /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .s-one-quarter {
-    width: 25%;
-  }
-
-  /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .s-three-quarters {
-    width: 75%;
-  }
 }
 @media only screen and (min-width: 700px) {
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
@@ -1329,7 +1309,7 @@ a:hover, a:active, a:focus {
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .m-one-half, .m-two-quarters {
+  .m-one-half {
     width: 50%;
   }
 
@@ -1342,16 +1322,6 @@ a:hover, a:active, a:focus {
   .m-two-thirds {
     width: 66.66667%;
   }
-
-  /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .m-one-quarter {
-    width: 25%;
-  }
-
-  /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .m-three-quarters {
-    width: 75%;
-  }
 }
 @media only screen and (min-width: 980px) {
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
@@ -1360,7 +1330,7 @@ a:hover, a:active, a:focus {
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .l-one-half, .l-two-quarters {
+  .l-one-half {
     width: 50%;
   }
 
@@ -1372,16 +1342,6 @@ a:hover, a:active, a:focus {
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
   .l-two-thirds {
     width: 66.66667%;
-  }
-
-  /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .l-one-quarter {
-    width: 25%;
-  }
-
-  /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .l-three-quarters {
-    width: 75%;
   }
 }
 /* line 78, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
@@ -1395,28 +1355,28 @@ a:hover, a:active, a:focus {
 }
 
 /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-.push--one-half, .push--two-quarters {
+.push--one-half, .push--three-sixths {
   left: 50%;
 }
 
 /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-.push--one-third {
+.push--one-third, .push--two-sixths {
   left: 33.33333%;
 }
 
 /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-.push--two-thirds {
+.push--two-thirds, .push--four-sixths {
   left: 66.66667%;
 }
 
 /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-.push--one-quarter {
-  left: 25%;
+.push--one-sixth {
+  left: 16.66667%;
 }
 
 /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-.push--three-quarters {
-  left: 75%;
+.push--five-sixths {
+  left: 83.33333%;
 }
 
 @media only screen and (min-width: 320px) {
@@ -1426,28 +1386,28 @@ a:hover, a:active, a:focus {
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--s-one-half, .push--s-two-quarters {
+  .push--s-one-half, .push--s-three-sixths {
     left: 50%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--s-one-third {
+  .push--s-one-third, .push--s-two-sixths {
     left: 33.33333%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--s-two-thirds {
+  .push--s-two-thirds, .push--s-four-sixths {
     left: 66.66667%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--s-one-quarter {
-    left: 25%;
+  .push--s-one-sixth {
+    left: 16.66667%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--s-three-quarters {
-    left: 75%;
+  .push--s-five-sixths {
+    left: 83.33333%;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -1457,28 +1417,28 @@ a:hover, a:active, a:focus {
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--m-one-half, .push--m-two-quarters {
+  .push--m-one-half, .push--m-three-sixths {
     left: 50%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--m-one-third {
+  .push--m-one-third, .push--m-two-sixths {
     left: 33.33333%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--m-two-thirds {
+  .push--m-two-thirds, .push--m-four-sixths {
     left: 66.66667%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--m-one-quarter {
-    left: 25%;
+  .push--m-one-sixth {
+    left: 16.66667%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--m-three-quarters {
-    left: 75%;
+  .push--m-five-sixths {
+    left: 83.33333%;
   }
 }
 @media only screen and (min-width: 980px) {
@@ -1488,28 +1448,28 @@ a:hover, a:active, a:focus {
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--l-one-half, .push--l-two-quarters {
+  .push--l-one-half, .push--l-three-sixths {
     left: 50%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--l-one-third {
+  .push--l-one-third, .push--l-two-sixths {
     left: 33.33333%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--l-two-thirds {
+  .push--l-two-thirds, .push--l-four-sixths {
     left: 66.66667%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--l-one-quarter {
-    left: 25%;
+  .push--l-one-sixth {
+    left: 16.66667%;
   }
 
   /* line 130, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
-  .push--l-three-quarters {
-    left: 75%;
+  .push--l-five-sixths {
+    left: 83.33333%;
   }
 }
 /* line 87, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/prelude-framework-0.8/scss/prelude/mixins/_grid.scss */
@@ -2208,13 +2168,13 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url('../img/hero-small.jpg?1387747028');
+  background-image: url('../img/hero-small.jpg?1387748495');
   color: white;
 }
 @media only screen and (min-width: 30em) {
   /* line 5, ../scss/base/_hero.scss */
   .hero {
-    background-image: url('../img/hero-large.jpg?1387747028');
+    background-image: url('../img/hero-large.jpg?1387748491');
   }
 }
 
@@ -2330,11 +2290,11 @@ ul {
 
 /* line 95, ../scss/base/_containers.scss */
 .container--blue {
-  background-color: #1183d0;
+  background-color: #4096D1;
 }
 /* line 8, ../scss/base/_containers.scss */
 .container--blue::before {
-  border-bottom-color: #1183d0 !important;
+  border-bottom-color: #4096d1 !important;
 }
 
 /* line 104, ../scss/base/_containers.scss */
