@@ -2,8 +2,8 @@
 // Grids
 // =============================================================================
 
-@include grid-widths(1 2 3 4, true);
-@include grid-pushes(1 2 3 4, true);
+@include grid-widths(1 2 3, true);
+@include grid-pushes(1 2 3 6, true);
 @include grid-pulls(1 2 3, true);
 
 @include each-grid-breakpoint('hide', true) {
