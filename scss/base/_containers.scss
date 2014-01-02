@@ -94,8 +94,8 @@
 
 .container--blue {
     @extend %ps;
-    @include slanted-container(down, #1183d0);
-    background-color: #1183d0;
+    @include slanted-container(down, #4096D1);
+    background-color: #4096D1;
 }
 
 // Dirty hack to prevent slanted containers bug
