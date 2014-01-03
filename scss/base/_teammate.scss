@@ -31,11 +31,10 @@
         }
     }
 
-    .teammate--hero & {
-        position: relative;
-        margin-top: -6em;
+    @include respond-to(large-and-up) {
+        float: right;
+    }
 
-        }
 }
 
 
@@ -66,14 +65,17 @@
 }
 
 .teammate--hero {
-
-    @extend .l-padding-trailer-3;
+    @extend .wrapper;
     .teammate__name,
     .teammate__role,
     .teammate__description {
         @include respond-to(large-and-up) {
             padding-left: 10%;
         }
+    }
+
+    @include respond-to(large-and-up) {
+        border-bottom: solid 1px $brand-color;
     }
 
 }

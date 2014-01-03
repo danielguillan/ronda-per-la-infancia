@@ -56,19 +56,6 @@
     background-color: $gray-lighter;
 }
 
-.container--dark {
-    @extend %ps;
-    @include slanted-container(down, #777777);
-    background-color: #777777;
-    color: $white;
-}
-
-.container--darker {
-    @extend %ps;
-    background-color: #333;
-    color: $white;
-}
-
 .container--brand {
     @extend %ps;
     @include slanted-container(up, $brand-color);
@@ -84,18 +71,6 @@
 .container--social {
     $social-background-color: scale-lightness($facebook-color, 90%);
     background-color: $social-background-color;
-}
-
-.container--red {
-    @extend %ps;
-    @include slanted-container(up, #fb4f67);
-    background-color: #fb4f67;
-}
-
-.container--blue {
-    @extend %ps;
-    @include slanted-container(down, #4096D1);
-    background-color: #4096D1;
 }
 
 // Dirty hack to prevent slanted containers bug
