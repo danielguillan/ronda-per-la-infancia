@@ -1613,14 +1613,14 @@ a:hover, a:active, a:focus {
 }
 
 /* line 5, ../scss/layout/_wrapper.scss */
-.wrapper {
+.wrapper, .teammate--hero {
   max-width: 60em;
   margin-left: 6%;
   margin-right: 6%;
 }
 @media only screen and (min-width: 47em) {
   /* line 5, ../scss/layout/_wrapper.scss */
-  .wrapper {
+  .wrapper, .teammate--hero {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -1807,7 +1807,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 47em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .l-padding-trailer-3, .teammate--hero {
+  .l-padding-trailer-3 {
     padding-bottom: 180px;
     padding-bottom: 9rem;
   }
@@ -2168,13 +2168,13 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url('../img/hero-small.jpg?1388773410');
+  background-image: url('../img/hero-small.jpg?1388773507');
   color: white;
 }
 @media only screen and (min-width: 30em) {
   /* line 5, ../scss/base/_hero.scss */
   .hero {
-    background-image: url('../img/hero-large.jpg?1388773410');
+    background-image: url('../img/hero-large.jpg?1388773507');
   }
 }
 
@@ -2192,13 +2192,13 @@ ul {
 }
 
 /* line 11, ../scss/base/_containers.scss */
-.container--white, .container--black, .container--light, .container--dark, .container--darker, .container--brand, .container--brand-light, .container--red, .container--blue {
+.container--white, .container--black, .container--light, .container--brand, .container--brand-light {
   position: relative;
   z-index: 2;
 }
 
 /* line 17, ../scss/base/_containers.scss */
-.container--dark::before, .container--brand::before, .container--brand-light::before, .container--red::before, .container--blue::before {
+.container--brand::before, .container--brand-light::before {
   content: "";
   position: absolute;
   top: -1.49em;
@@ -2215,13 +2215,8 @@ ul {
 }
 
 /* line 32, ../scss/base/_containers.scss */
-.container--brand::before, .container--brand-light::before, .container--red::before {
+.container--brand::before, .container--brand-light::before {
   border-left-width: 90em;
-}
-
-/* line 38, ../scss/base/_containers.scss */
-.container--dark::before, .container--blue::before {
-  border-right-width: 90em;
 }
 
 /* line 43, ../scss/base/_containers.scss */
@@ -2241,22 +2236,6 @@ ul {
 }
 
 /* line 59, ../scss/base/_containers.scss */
-.container--dark {
-  background-color: #777777;
-  color: white;
-}
-/* line 8, ../scss/base/_containers.scss */
-.container--dark::before {
-  border-bottom-color: #777777 !important;
-}
-
-/* line 66, ../scss/base/_containers.scss */
-.container--darker {
-  background-color: #333;
-  color: white;
-}
-
-/* line 72, ../scss/base/_containers.scss */
 .container--brand {
   background-color: #2bfecc;
 }
@@ -2265,7 +2244,7 @@ ul {
   border-bottom-color: #2bfecc !important;
 }
 
-/* line 78, ../scss/base/_containers.scss */
+/* line 65, ../scss/base/_containers.scss */
 .container--brand-light {
   background-color: #abffee;
 }
@@ -2274,30 +2253,12 @@ ul {
   border-bottom-color: #abffee !important;
 }
 
-/* line 84, ../scss/base/_containers.scss */
+/* line 71, ../scss/base/_containers.scss */
 .container--social {
   background-color: #e9eef7;
 }
 
-/* line 89, ../scss/base/_containers.scss */
-.container--red {
-  background-color: #fb4f67;
-}
-/* line 8, ../scss/base/_containers.scss */
-.container--red::before {
-  border-bottom-color: #fb4f67 !important;
-}
-
-/* line 95, ../scss/base/_containers.scss */
-.container--blue {
-  background-color: #4096D1;
-}
-/* line 8, ../scss/base/_containers.scss */
-.container--blue::before {
-  border-bottom-color: #4096d1 !important;
-}
-
-/* line 104, ../scss/base/_containers.scss */
+/* line 79, ../scss/base/_containers.scss */
 html,
 body {
   overflow-x: hidden;
@@ -2309,30 +2270,37 @@ body {
     position: absolute;
   }
 }
-/* line 34, ../scss/base/_teammate.scss */
-.teammate--hero .teammate__photo {
-  position: relative;
-  margin-top: -6em;
+@media only screen and (min-width: 47em) {
+  /* line 24, ../scss/base/_teammate.scss */
+  .teammate__photo {
+    float: right;
+  }
 }
 
 @media only screen and (max-width: 29.95em) {
-  /* line 49, ../scss/base/_teammate.scss */
+  /* line 48, ../scss/base/_teammate.scss */
   .teammate--secondary .teammate__name {
     margin-top: 180px;
   }
 }
 
 @media only screen and (min-width: 47em) {
-  /* line 71, ../scss/base/_teammate.scss */
+  /* line 69, ../scss/base/_teammate.scss */
   .teammate--hero .teammate__name,
   .teammate--hero .teammate__role,
   .teammate--hero .teammate__description {
     padding-left: 10%;
   }
 }
+@media only screen and (min-width: 47em) {
+  /* line 67, ../scss/base/_teammate.scss */
+  .teammate--hero {
+    border-bottom: solid 1px #2bfecc;
+  }
+}
 
 @media only screen and (max-width: 29.95em) {
-  /* line 83, ../scss/base/_teammate.scss */
+  /* line 85, ../scss/base/_teammate.scss */
   .teammate--secondary .flag__image {
     padding-right: 0;
   }
