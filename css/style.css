@@ -2168,13 +2168,13 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url('../img/hero-small.jpg?1387748495');
+  background-image: url('../img/hero-small.jpg?1388773410');
   color: white;
 }
 @media only screen and (min-width: 30em) {
   /* line 5, ../scss/base/_hero.scss */
   .hero {
-    background-image: url('../img/hero-large.jpg?1387748491');
+    background-image: url('../img/hero-large.jpg?1388773410');
   }
 }
 
