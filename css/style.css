@@ -1993,6 +1993,15 @@ a:hover, a:active, a:focus {
   }
 }
 
+/* line 43, ../scss/base/_abstractions.scss */
+.img--rotated {
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+
 /* line 5, ../scss/base/_typography.scss */
 .face--200,
 .face--light {
@@ -2198,7 +2207,7 @@ ul {
 }
 
 /* line 17, ../scss/base/_containers.scss */
-.container--brand::before, .container--brand-light::before {
+.container--brand.container--slanted::before, .container--brand-light::before, .container--brand-light.container--slanted::before {
   content: "";
   position: absolute;
   top: -1.49em;
@@ -2215,7 +2224,7 @@ ul {
 }
 
 /* line 32, ../scss/base/_containers.scss */
-.container--brand::before, .container--brand-light::before {
+.container--brand.container--slanted::before, .container--brand-light::before, .container--brand-light.container--slanted::before {
   border-left-width: 90em;
 }
 
@@ -2240,7 +2249,7 @@ ul {
   background-color: #2bfecc;
 }
 /* line 8, ../scss/base/_containers.scss */
-.container--brand::before {
+.container--brand.container--slanted::before {
   border-bottom-color: #2bfecc !important;
 }
 
@@ -2252,13 +2261,17 @@ ul {
 .container--brand-light::before {
   border-bottom-color: #abffee !important;
 }
+/* line 8, ../scss/base/_containers.scss */
+.container--brand-light.container--slanted::before {
+  border-bottom-color: #abffee !important;
+}
 
-/* line 71, ../scss/base/_containers.scss */
+/* line 72, ../scss/base/_containers.scss */
 .container--social {
   background-color: #e9eef7;
 }
 
-/* line 79, ../scss/base/_containers.scss */
+/* line 80, ../scss/base/_containers.scss */
 html,
 body {
   overflow-x: hidden;
