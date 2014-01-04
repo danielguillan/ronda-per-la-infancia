@@ -58,14 +58,15 @@
 
 .container--brand {
     @extend %ps;
-    @include slanted-container(up, $brand-color);
     background-color: $brand-color;
+    &.container--slanted { @include slanted-container(up, $brand-color); }
 }
 
 .container--brand-light {
     @extend %ps;
     @include slanted-container(up, #abffee);
     background-color: #abffee;
+    &.container--slanted { @include slanted-container(up, #abffee); }
 }
 
 .container--social {
