@@ -39,3 +39,7 @@
         }
     }
 }
+
+.img--rotated {
+    @include rotate(-1deg);
+}
