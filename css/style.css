@@ -1701,7 +1701,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 16em) and (max-width: 29.95em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .s-padding-leader-2 {
+  .s-padding-leader-2, .hero {
     padding-top: 120px;
     padding-top: 6rem;
   }
@@ -1717,7 +1717,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 47em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .l-padding-leader-2, .hero {
+  .l-padding-leader-2 {
     padding-top: 120px;
     padding-top: 6rem;
   }
@@ -1731,7 +1731,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 16em) and (max-width: 29.95em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .s-padding-trailer-2 {
+  .s-padding-trailer-2, .hero {
     padding-bottom: 120px;
     padding-bottom: 6rem;
   }
@@ -1747,7 +1747,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 47em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .l-padding-trailer-2, .hero {
+  .l-padding-trailer-2 {
     padding-bottom: 120px;
     padding-bottom: 6rem;
   }
@@ -1777,7 +1777,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 47em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .l-padding-leader-3 {
+  .l-padding-leader-3, .hero {
     padding-top: 180px;
     padding-top: 9rem;
   }
@@ -1807,7 +1807,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 47em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .l-padding-trailer-3 {
+  .l-padding-trailer-3, .hero {
     padding-bottom: 180px;
     padding-bottom: 9rem;
   }
@@ -2175,6 +2175,7 @@ ul {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url('../img/hero-small.jpg?1389110919');
@@ -2187,13 +2188,12 @@ ul {
   }
 }
 
-/* line 21, ../scss/base/_hero.scss */
+/* line 24, ../scss/base/_hero.scss */
 .hero__content {
-  max-width: 20em;
-  border: solid 15px #abffee;
-  background-color: rgba(0, 0, 0, 0.15);
+  max-width: 17em;
+  border: solid 7.5px black;
 }
-/* line 29, ../scss/base/_hero.scss */
+/* line 32, ../scss/base/_hero.scss */
 .hero__content span {
   display: block;
   white-space: nowrap;
@@ -2208,7 +2208,7 @@ ul {
 }
 
 /* line 17, ../scss/base/_containers.scss */
-.container--brand.container--slanted::before, .container--brand-light::before, .container--brand-light.container--slanted::before {
+.container--white.container--slanted::before, .container--brand.container--slanted::before, .container--brand-light::before, .container--brand-light.container--slanted::before {
   content: "";
   position: absolute;
   top: -1.49em;
@@ -2225,7 +2225,7 @@ ul {
 }
 
 /* line 32, ../scss/base/_containers.scss */
-.container--brand.container--slanted::before, .container--brand-light::before, .container--brand-light.container--slanted::before {
+.container--white.container--slanted::before, .container--brand.container--slanted::before, .container--brand-light::before, .container--brand-light.container--slanted::before {
   border-left-width: 90em;
 }
 
@@ -2233,19 +2233,23 @@ ul {
 .container--white {
   background-color: white;
 }
+/* line 8, ../scss/base/_containers.scss */
+.container--white.container--slanted::before {
+  border-bottom-color: white !important;
+}
 
-/* line 48, ../scss/base/_containers.scss */
+/* line 49, ../scss/base/_containers.scss */
 .container--black {
   background-color: black;
   color: white;
 }
 
-/* line 54, ../scss/base/_containers.scss */
+/* line 55, ../scss/base/_containers.scss */
 .container--light {
   background-color: #e3e3e3;
 }
 
-/* line 59, ../scss/base/_containers.scss */
+/* line 60, ../scss/base/_containers.scss */
 .container--brand {
   background-color: #2bfecc;
 }
@@ -2254,25 +2258,25 @@ ul {
   border-bottom-color: #2bfecc !important;
 }
 
-/* line 65, ../scss/base/_containers.scss */
+/* line 66, ../scss/base/_containers.scss */
 .container--brand-light {
-  background-color: #abffee;
+  background-color: #2bfecc;
 }
 /* line 8, ../scss/base/_containers.scss */
 .container--brand-light::before {
-  border-bottom-color: #abffee !important;
+  border-bottom-color: #2bfecc !important;
 }
 /* line 8, ../scss/base/_containers.scss */
 .container--brand-light.container--slanted::before {
-  border-bottom-color: #abffee !important;
+  border-bottom-color: #2bfecc !important;
 }
 
-/* line 72, ../scss/base/_containers.scss */
+/* line 73, ../scss/base/_containers.scss */
 .container--social {
   background-color: #e9eef7;
 }
 
-/* line 80, ../scss/base/_containers.scss */
+/* line 81, ../scss/base/_containers.scss */
 html,
 body {
   overflow-x: hidden;
