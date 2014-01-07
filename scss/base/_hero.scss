@@ -3,11 +3,14 @@
 // =============================================================================
 
 .hero {
-    @extend .l-padding-leader-2;
-    @extend .l-padding-trailer-2;
+    @extend .l-padding-leader-3;
+    @extend .l-padding-trailer-3;
+    @extend .s-padding-leader-2;
+    @extend .s-padding-trailer-2;
     @extend .island;
 
     @include background-size(cover);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: image-url('hero-small.jpg');
@@ -22,9 +25,9 @@
     @extend .island;
     @extend .align--center;
 
-    max-width: pixels-to-ems(400px);
-    border: solid $half-spacing-unit $brand-color-lighter;
-    background-color: rgba(0,0,0,.15);
+    max-width: pixels-to-ems(340px);
+    border: solid $quarter-spacing-unit $black;
+    //background-color: rgba(0,0,0,.15);
 
     span {
         display: block;
