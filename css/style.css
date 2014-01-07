@@ -2177,13 +2177,13 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url('../img/hero-small.jpg?1388773507');
+  background-image: url('../img/hero-small.jpg?1389110919');
   color: white;
 }
 @media only screen and (min-width: 30em) {
   /* line 5, ../scss/base/_hero.scss */
   .hero {
-    background-image: url('../img/hero-large.jpg?1388773507');
+    background-image: url('../img/hero-large.jpg?1389110919');
   }
 }
 
@@ -2191,8 +2191,9 @@ ul {
 .hero__content {
   max-width: 20em;
   border: solid 15px #2bfecc;
+  background-color: rgba(0, 0, 0, 0.15);
 }
-/* line 28, ../scss/base/_hero.scss */
+/* line 29, ../scss/base/_hero.scss */
 .hero__content span {
   display: block;
   white-space: nowrap;
