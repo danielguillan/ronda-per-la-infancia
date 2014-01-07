@@ -24,6 +24,7 @@
 
     max-width: pixels-to-ems(400px);
     border: solid $half-spacing-unit $brand-color;
+    background-color: rgba(0,0,0,.15);
 
     span {
         display: block;
