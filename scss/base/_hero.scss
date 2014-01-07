@@ -23,7 +23,7 @@
     @extend .align--center;
 
     max-width: pixels-to-ems(400px);
-    border: solid $half-spacing-unit $brand-color;
+    border: solid $half-spacing-unit $brand-color-lighter;
     background-color: rgba(0,0,0,.15);
 
     span {
