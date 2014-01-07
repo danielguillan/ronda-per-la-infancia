@@ -2260,15 +2260,15 @@ ul {
 
 /* line 66, ../scss/base/_containers.scss */
 .container--brand-light {
-  background-color: #6bfedd;
+  background-color: #8bfee5;
 }
 /* line 8, ../scss/base/_containers.scss */
 .container--brand-light::before {
-  border-bottom-color: #6bfedd !important;
+  border-bottom-color: #8bfee5 !important;
 }
 /* line 8, ../scss/base/_containers.scss */
 .container--brand-light.container--slanted::before {
-  border-bottom-color: #6bfedd !important;
+  border-bottom-color: #8bfee5 !important;
 }
 
 /* line 73, ../scss/base/_containers.scss */
