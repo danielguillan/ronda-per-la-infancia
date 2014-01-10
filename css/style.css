@@ -1701,7 +1701,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 16em) and (max-width: 29.95em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .s-padding-leader-2, .hero {
+  .s-padding-leader-2 {
     padding-top: 120px;
     padding-top: 6rem;
   }
@@ -1731,7 +1731,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 16em) and (max-width: 29.95em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .s-padding-trailer-2, .hero {
+  .s-padding-trailer-2 {
     padding-bottom: 120px;
     padding-bottom: 6rem;
   }
@@ -1777,7 +1777,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 47em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .l-padding-leader-3, .hero {
+  .l-padding-leader-3 {
     padding-top: 180px;
     padding-top: 9rem;
   }
@@ -1807,7 +1807,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (min-width: 47em) {
   /* line 16, ../scss/mixins/_each-grid-breakpoint.scss */
-  .l-padding-trailer-3, .hero {
+  .l-padding-trailer-3 {
     padding-bottom: 180px;
     padding-bottom: 9rem;
   }
@@ -2171,29 +2171,31 @@ ul {
 
 /* line 5, ../scss/base/_hero.scss */
 .hero {
+  padding-top: 15em;
+  padding-bottom: 15em;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url('../img/hero-small.jpg?1389110919');
   color: white;
 }
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 47em) {
   /* line 5, ../scss/base/_hero.scss */
   .hero {
+    background-attachment: fixed;
     background-image: url('../img/hero-large.jpg?1389110919');
   }
 }
 
-/* line 24, ../scss/base/_hero.scss */
+/* line 23, ../scss/base/_hero.scss */
 .hero__content {
   max-width: 17em;
   border: solid 7.5px black;
 }
-/* line 32, ../scss/base/_hero.scss */
+/* line 31, ../scss/base/_hero.scss */
 .hero__content span {
   display: block;
   white-space: nowrap;
@@ -2282,10 +2284,11 @@ body {
   overflow-x: hidden;
 }
 
-@media only screen and (max-width: 29.95em) {
+@media only screen and (max-width: 46.95em) {
   /* line 26, ../scss/base/_teammate.scss */
   .teammate--secondary .teammate__photo {
     position: absolute;
+    max-width: 75%;
   }
 }
 @media only screen and (min-width: 47em) {
@@ -2294,31 +2297,46 @@ body {
     float: right;
   }
 }
+@media only screen and (max-width: 46.95em) {
+  /* line 40, ../scss/base/_teammate.scss */
+  .teammate--hero .teammate__photo {
+    border-radius: 50%;
+    max-width: 75%;
+    margin: 30px auto;
+    border: solid 7.5px #2bfecc;
+  }
+}
 
 @media only screen and (max-width: 29.95em) {
-  /* line 48, ../scss/base/_teammate.scss */
+  /* line 59, ../scss/base/_teammate.scss */
   .teammate--secondary .teammate__name {
     margin-top: 180px;
   }
 }
 
 @media only screen and (min-width: 47em) {
-  /* line 69, ../scss/base/_teammate.scss */
+  /* line 80, ../scss/base/_teammate.scss */
   .teammate--hero .teammate__name,
   .teammate--hero .teammate__role,
   .teammate--hero .teammate__description {
     padding-left: 10%;
   }
 }
-@media only screen and (min-width: 47em) {
-  /* line 67, ../scss/base/_teammate.scss */
+@media only screen and (max-width: 46.95em) {
+  /* line 78, ../scss/base/_teammate.scss */
   .teammate--hero {
-    border-bottom: solid 1px #2bfecc;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 47em) {
+  /* line 78, ../scss/base/_teammate.scss */
+  .teammate--hero {
+    border-bottom: solid 7.5px #2bfecc;
   }
 }
 
 @media only screen and (max-width: 29.95em) {
-  /* line 85, ../scss/base/_teammate.scss */
+  /* line 100, ../scss/base/_teammate.scss */
   .teammate--secondary .flag__image {
     padding-right: 0;
   }
