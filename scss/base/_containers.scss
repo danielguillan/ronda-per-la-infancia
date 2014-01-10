@@ -65,9 +65,9 @@
 
 .container--brand-light {
     @extend %ps;
-    @include slanted-container(up, $brand-color);
-    background-color: $brand-color;
-    &.container--slanted { @include slanted-container(up, $brand-color); }
+    @include slanted-container(up, $brand-color-lighter);
+    background-color: $brand-color-lighter;
+    &.container--slanted { @include slanted-container(up, $brand-color-lighter); }
 }
 
 .container--social {
