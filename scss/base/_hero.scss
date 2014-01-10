@@ -3,20 +3,19 @@
 // =============================================================================
 
 .hero {
-    @extend .l-padding-leader-3;
-    @extend .l-padding-trailer-3;
-    @extend .s-padding-leader-2;
-    @extend .s-padding-trailer-2;
     @extend .island;
 
+    padding-top: 15em;
+    padding-bottom: 15em;
+
     @include background-size(cover);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: image-url('hero-small.jpg');
     color: $white;
 
-    @include respond-to(medium-and-up) {
+    @include respond-to(large-and-up) {
+        background-attachment: fixed;
         background-image: image-url('hero-large.jpg');
     }
 }

@@ -22,6 +22,6 @@ $breakpoint-sizes:  $small $medium $large;
 // 2. Colors
 // =============================================================================
 
-$brand-color-lighter: #abffee;
+$brand-color-lighter: mix($brand-color, #abffee, 25%);
 $facebook-color:      #3B5998;
 $twitter-color:       #4099FF;

@@ -26,13 +26,24 @@
     .teammate--secondary & {
         @extend .thumbnail-circle;
 
-        @include respond-to(small-and-below) {
+        @include respond-to(medium-and-below) {
             position: absolute;
+            max-width: 75%;
         }
     }
 
+
     @include respond-to(large-and-up) {
         float: right;
+    }
+
+    .teammate--hero & {
+        @include respond-to(medium-and-below) {
+            border-radius: 50%;
+            max-width: 75%;
+            margin: $base-spacing-unit auto;
+            border: solid $quarter-spacing-unit $brand-color;
+        }
     }
 
 }
@@ -74,8 +85,12 @@
         }
     }
 
+    @include respond-to(medium-and-below) {
+        text-align: center;
+    }
+
     @include respond-to(large-and-up) {
-        border-bottom: solid 1px $brand-color;
+        border-bottom: solid $quarter-spacing-unit $brand-color;
     }
 
 }
